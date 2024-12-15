@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .header, .footer {
+      font-size: 1.2rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .header, .footer {
+      font-size: 1rem;
+    }
+  }
+
+/*navigation bar*/
+.navbar {
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center; /* Align items to the baseline */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .logo {
+    margin-right: auto; /* Push logo to the left */
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.navbar .menu {
+    display: flex; /* Align menu items in a row */
+    gap: 20px; /* Add spacing between menu items */
+}
+
+.navbar li {
+    display: inline-block; /* Ensure items align in a row */
+}
+
+.navbar li a {
+    text-decoration: none; /* Remove underline */
+    color: #000000; /* Default text color */
+    padding: 5px 10px; /* Padding for clickable area */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.navbar li a.box {
+    border: 2px solid green;
+    border-radius: 10px; /* Make the border rounded */
+    padding: 5px 20px; /* Add more padding to make it look like a box */
+    line-height: 1; /* Ensures text stays on the same baseline */
+}
+
+.navbar li a.active {
+    font-weight: bold;
+    color: limegreen;
+}
+
+.navbar li a:hover {
+    color: limegreen;
+}
+.navbar li a.box:hover {
+    background-color: limegreen;
+    color: white;
+}
+
+
+/*footer*/
+
+/* styles.css */
+
+
+  .footer {
+    flex-direction: column;
+    background-color: #181818;
+    padding: 20px 30px;
+    margin: 0 20px;
+    border-radius: 50px 50px 0 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    max-width: 80%;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+
+  .contact-info h3 {
+    color: limegreen;
+  }
+
+  .contact-info a {
+    color: limegreen;
+    text-decoration: none;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+  .subscribe-section {
+    text-align: right;
+  }
+
+  .subscribe-form {
+    display: flex;
+  }
+
+  .subscribe-form input {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #fff;
+    background-color: #222;
+  }
+
+  .subscribe-form button {
+    padding: 10px;
+    border: none;
+    background-color: limegreen;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+
+  .subscribe-form button:hover {
+    background-color: limegreen;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .footer-bottom a {
+    color: limegreen;
+    text-decoration: none;
+  }
+
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+
+  .social-icons a {
+    margin-left: 10px;
+    color: limegreen;
+    font-size: 1.2em;
+  }
+
+  .social-icons a:hover {
+    color: green;
+  }
